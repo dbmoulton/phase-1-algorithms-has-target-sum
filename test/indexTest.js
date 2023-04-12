@@ -6,7 +6,7 @@ describe("hasTargetSum", () => {
   it("returns true when the array is [3, 8, 12, 4, 11, 7] and the target is 10", () => {
     expect(hasTargetSum([3, 8, 12, 4, 11, 7], 10)).to.be.true;
   });
-  it("returns true when the array is [22, 19, 4, 6, 30] and the target is 25", () => {
+  it("returns true when the array is [22, 19, 6, 4, 30] and the target is 25", () => {
     expect(hasTargetSum([22, 19, 4, 6, 30], 25)).to.be.true;
   });
   it("returns false when the array is [1, 2, 5] and the target is 4", () => {

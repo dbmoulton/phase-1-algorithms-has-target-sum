@@ -1,9 +1,23 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  // get first number
+  for (let firstNum = 0; firstNum < array.length; firstNum++) {
+    // look for second numer
+    for (let secondNum = firstNum + 1; secondNum < array.length; secondNum++) {
+      // add two numbers and compare to target
+      if (array[firstNum] + array[secondNum] === target) {
+        console.log(array[firstNum], array[secondNum])
+        return true
+        // return [array[firstNum], array[secondNum]];
+      } 
+    }
+    // return false
+  }  
+  return false
 }
 
 /* 
   Write the Big O time complexity of your function here
+  O(n2)
 */
 
 /* 
@@ -23,7 +37,7 @@ if (require.main === module) {
   console.log("");
 
   console.log("Expecting: true");
-  console.log("=>", hasTargetSum([22, 19, 4, 6, 30], 25));
+  console.log("=>", hasTargetSum([22, 19, 6, 4, 30], 25));
 
   console.log("");
 
